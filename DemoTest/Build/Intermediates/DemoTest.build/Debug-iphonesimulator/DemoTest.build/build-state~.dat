@@ -1,0 +1,243 @@
+TDemoTest
+v6
+r1
+cCheck dependencies
+cProcessPCH /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch.pch DemoTest/DemoTest-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationController.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLAppDelegate.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationBar.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/main.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNextViewController.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000531E68B200000000000003B4
+t1394501810
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E68C3000000000000019E
+t1394501827
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531E68F80000000000000ADC
+t1394501880
+s2780
+
+N/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLAppDelegate.o
+t2
+s0
+
+N/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLMiddleVC.o
+t2
+s0
+
+N/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationBar.o
+t2
+s0
+
+N/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationController.o
+t2
+s0
+
+N/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNextViewController.o
+t2
+s0
+
+N/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch.pch
+t1399890906
+s122800
+
+N/Users/blank/Documents/老的文档/DemoTest/DemoTest/DemoTest-Prefix.pch
+c000000005370A3100000000000000158
+t1399890704
+s344
+
+N/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.m
+c000000005370A3BE000000000000096C
+t1399890878
+s2412
+
+N/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLMiddleVC.m
+c000000005370A3D80000000000000664
+t1399890904
+s1636
+
+N/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.m
+c000000005370890600000000000009B1
+t1399884038
+s2481
+
+N/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.m
+c0000000053709C5E0000000000003558
+t1399888990
+s13656
+
+N/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.m
+c0000000053709C340000000000000733
+t1399888948
+s1843
+
+N/Users/blank/Documents/老的文档/DemoTest/DemoTest/main.m
+c000000005370A310000000000000015F
+t1399890704
+s351
+
+CBuild AST from /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.m
+r0
+
+CBuild AST from /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLMiddleVC.m
+r0
+
+CBuild AST from /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.m
+r0
+
+CBuild AST from /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.m
+r0
+
+CBuild AST from /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.m
+r0
+
+CBuild AST from /Users/blank/Documents/老的文档/DemoTest/DemoTest/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies33fbc458db20b941^c520d058db20b941^---0#1#1#--18"Check dependencies36"F29EE42E-0AE7-4A70-83EA-C6A0518A476C-
+
+CCompileAssetCatalog /Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/DemoTest.app /Users/blank/Documents/老的文档/DemoTest/DemoTest/Images.xcassets
+r0
+
+CCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLAppDelegate.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s421583706.344416
+e421583707.307257
+r1
+xCompileC
+xBuild/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLAppDelegate.o
+x/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.m
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.h
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.h
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLMiddleVC.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.m211"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLAppDelegate.o DemoTest/FYLAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6f4b585adb20b941^5018505bdb20b941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/blank/Documents/%E8%80%81%E7%9A%84%E6%96%87%E6%A1%A3/DemoTest/DemoTest/FYLAppDelegate.m0000000000000000^3669"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLAppDelegate.o DemoTest/FYLAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/blank/Documents/老的文档/DemoTest    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/blank/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-generated-files.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-own-target-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-all-target-headers.hmap -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-project-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources/i386 -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources -F/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator -include /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch -MMD -MT dependencies -MF /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLAppDelegate.d --serialize-diagnostics /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLAppDelegate.dia -c /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.m -o /Users/blank/Documents/老的文档/DemoTe36"B3D201E6-5360-4C8D-97C9-635DE16AB322-
+b0FD0F5C8-C8F8-4933-9A30-0DD3D83F9395
+
+CCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLMiddleVC.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLMiddleVC.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationBar.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s421583706.344923
+e421583707.105563
+r0
+xCompileC
+xBuild/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationBar.o
+x/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.m:10:9: fatal error: 'UIApplication+UI7.h' file not found
+o#import "UIApplication+UI7.h"
+o        ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.m215"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationBar.o DemoTest/FYLNavigationBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9c6f585adb20b941^840d1b5bdb20b941^-188"/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.m:10:9: fatal error: 'UIApplication+UI7.h' file not found#import "UIApplication+UI7.h"        ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@36"'UIApplication+UI7.h' file not found-421583707#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@103"file:///Users/blank/Documents/%E8%80%81%E7%9A%84%E6%96%87%E6%A1%A3/DemoTest/DemoTest/FYLNavigationBar.m0000000000000000^9#8#9#8#191#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@103"file:///Users/blank/Documents/%E8%80%81%E7%9A%84%E6%96%87%E6%A1%A3/DemoTest/DemoTest/FYLNavigationBar.m0000000000000000^3681"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationBar.o DemoTest/FYLNavigationBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/blank/Documents/老的文档/DemoTest    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/blank/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-generated-files.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-own-target-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-all-target-headers.hmap -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-project-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources/i386 -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources -F/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator -include /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch -MMD -MT dependencies -MF /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationBar.d --serialize-diagnostics /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationBar.dia -c /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.m -o /Users/blank/Documents/老的文档/DemoTest36"852F2462-B795-40F3-AAA0-7628ED2E3A6E-
+b0FD0F5C8-C8F8-4933-9A30-0DD3D83F9395
+
+CCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationController.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s421583706.343937
+e421583707.105177
+r0
+xCompileC
+xBuild/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationController.o
+x/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.m:12:9: fatal error: 'UIApplication+UI7.h' file not found
+o#import "UIApplication+UI7.h"
+o        ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.m229"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationController.o DemoTest/FYLNavigationController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6a31585adb20b941^c4061b5bdb20b941^-195"/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.m:12:9: fatal error: 'UIApplication+UI7.h' file not found#import "UIApplication+UI7.h"        ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@36"'UIApplication+UI7.h' file not found-421583707#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@110"file:///Users/blank/Documents/%E8%80%81%E7%9A%84%E6%96%87%E6%A1%A3/DemoTest/DemoTest/FYLNavigationController.m0000000000000000^11#8#11#8#261#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@110"file:///Users/blank/Documents/%E8%80%81%E7%9A%84%E6%96%87%E6%A1%A3/DemoTest/DemoTest/FYLNavigationController.m0000000000000000^3723"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationController.o DemoTest/FYLNavigationController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/blank/Documents/老的文档/DemoTest    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/blank/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-generated-files.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-own-target-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-all-target-headers.hmap -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-project-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources/i386 -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources -F/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator -include /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch -MMD -MT dependencies -MF /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationController.d --serialize-diagnostics /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNavigationController.dia -c /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationController.m -o /Users/blank/Documents/老的文档/DemoTest/Build/36"7C9B2D73-BB47-4457-9F57-65C6C52D2AE8-
+b0FD0F5C8-C8F8-4933-9A30-0DD3D83F9395
+
+CCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNextViewController.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s421583706.738855
+e421583707.307227
+r1
+xCompileC
+xBuild/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNextViewController.o
+x/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.m
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.h
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNavigationBar.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.m225"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNextViewController.o DemoTest/FYLNextViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerdc48bd5adb20b941^191d505bdb20b941^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/blank/Documents/%E8%80%81%E7%9A%84%E6%96%87%E6%A1%A3/DemoTest/DemoTest/FYLNextViewController.m0000000000000000^3711"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNextViewController.o DemoTest/FYLNextViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/blank/Documents/老的文档/DemoTest    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/blank/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-generated-files.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-own-target-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-all-target-headers.hmap -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-project-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources/i386 -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources -F/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator -include /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch -MMD -MT dependencies -MF /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNextViewController.d --serialize-diagnostics /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/FYLNextViewController.dia -c /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.m -o /Users/blank/Documents/老的文档/DemoTest/Buil36"FDA3463B-3539-4C65-B710-D7294BA5E8D3-
+b0FD0F5C8-C8F8-4933-9A30-0DD3D83F9395
+
+CCompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/main.o /Users/blank/Documents/老的文档/DemoTest/DemoTest/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s421583706.345598
+e421583706.738456
+r1
+xCompileC
+xBuild/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/main.o
+x/Users/blank/Documents/老的文档/DemoTest/DemoTest/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/main.m
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLAppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/blank/Documents/老的文档/DemoTest/DemoTest/main.m191"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/main.o DemoTest/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0dab585adb20b941^cdc8bc5adb20b941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/blank/Documents/%E8%80%81%E7%9A%84%E6%96%87%E6%A1%A3/DemoTest/DemoTest/main.m0000000000000000^3609"CompileC Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/main.o DemoTest/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/blank/Documents/老的文档/DemoTest    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/blank/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-generated-files.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-own-target-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-all-target-headers.hmap -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-project-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources/i386 -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources -F/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator -include /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch -MMD -MT dependencies -MF /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/Objects-normal/i386/main.dia -c /Users/blank/Documents/老的文档/DemoTest/DemoTest/main.m -o /Users/blank/Documents/老的文36"5D422C69-F66F-46F0-A963-8D276CB64AA5-
+b0FD0F5C8-C8F8-4933-9A30-0DD3D83F9395
+
+CCompileXIB /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLMiddleVC.xib
+r0
+
+CCompileXIB /Users/blank/Documents/老的文档/DemoTest/DemoTest/FYLNextViewController.xib
+r0
+
+CCopyStringsFile /Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/DemoTest.app/en.lproj/InfoPlist.strings DemoTest/en.lproj/InfoPlist.strings
+r0
+
+CGenerateDSYMFile /Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/DemoTest.app.dSYM /Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/DemoTest.app/DemoTest
+r0
+
+CLd /Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/DemoTest.app/DemoTest normal i386
+r0
+
+CProcessInfoPlistFile /Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/DemoTest.app/Info.plist /Users/blank/Documents/老的文档/DemoTest/DemoTest/DemoTest-Info.plist
+r0
+
+CProcessPCH /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch.pch DemoTest/DemoTest-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s421583704.875565
+e421583706.343131
+r1
+xProcessPCH
+x/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch.pch
+xDemoTest/DemoTest-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/blank/Documents/老的文档/DemoTest/DemoTest/DemoTest-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile DemoTest/DemoTest-Prefix.pch215"ProcessPCH Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch.pch DemoTest/DemoTest-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler705ee058db20b941^d4d7575adb20b941^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/blank/Documents/%E8%80%81%E7%9A%84%E6%96%87%E6%A1%A3/DemoTest/DemoTest/DemoTest-Prefix.pch0000000000000000^3526"ProcessPCH Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch.pch DemoTest/DemoTest-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/blank/Documents/老的文档/DemoTest    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/blank/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-generated-files.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-own-target-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-all-target-headers.hmap -iquote /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DemoTest-project-headers.hmap -I/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources/i386 -I/Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/DemoTest.build/Debug-iphonesimulator/DemoTest.build/DerivedSources -F/Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch.dia -MMD -MT dependencies -MF /Users/blank/Documents/老的文档/DemoTest/Build/Intermediates/PrecompiledHeaders/DemoTest-Prefix-dypjwzxosurzzbeswoxbddymsfgq/DemoTest-Prefix.pch.d -c /Users/blank/Documents/老的文档/DemoTest/DemoTest/DemoTest-Prefix.pch -o /Users/blank/Documents/老的文档/DemoTest/Buil36"E691D835-87E6-4CCA-83EF-CF0F2860F300-
+b0FD0F5C8-C8F8-4933-9A30-0DD3D83F9395
+
+CProcessPCH /Users/blank/Library/Developer/Xcode/DerivedData/DemoTest-brxrpgznxypkekctlwxkpybkwhwc/Index/PrecompiledHeaders/DemoTest-Prefix-bavpjtravtzeutdldxjjikujeuwl_ast/DemoTest-Prefix.pch.pch DemoTest/DemoTest-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/blank/Documents/老的文档/DemoTest/Build/Products/Debug-iphonesimulator/DemoTest.app
+r0
+
