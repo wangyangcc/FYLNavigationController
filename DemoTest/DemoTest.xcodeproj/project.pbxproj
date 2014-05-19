@@ -27,6 +27,9 @@
 		4622E2EE1920DAF000626967 /* FYLMiddleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4622E2E51920DAF000626967 /* FYLMiddleVC.m */; };
 		4622E2F11920DC4800626967 /* content@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4622E2EF1920DC4800626967 /* content@2x.png */; };
 		4622E2F21920DC4800626967 /* middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4622E2F01920DC4800626967 /* middle@2x.png */; };
+		46F7A6BD1929D16900FADCA4 /* FYLCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F7A6BB1929D16900FADCA4 /* FYLCommentVC.m */; };
+		46F7A6BE1929D16900FADCA4 /* FYLCommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F7A6BC1929D16900FADCA4 /* FYLCommentVC.xib */; };
+		46F7A6C01929D2D400FADCA4 /* conmment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F7A6BF1929D2D400FADCA4 /* conmment@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,10 @@
 		4622E2E81920DAF000626967 /* FYLMiddleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLMiddleVC.h; sourceTree = "<group>"; };
 		4622E2EF1920DC4800626967 /* content@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content@2x.png"; sourceTree = "<group>"; };
 		4622E2F01920DC4800626967 /* middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle@2x.png"; sourceTree = "<group>"; };
+		46F7A6BA1929D16900FADCA4 /* FYLCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLCommentVC.h; sourceTree = "<group>"; };
+		46F7A6BB1929D16900FADCA4 /* FYLCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLCommentVC.m; sourceTree = "<group>"; };
+		46F7A6BC1929D16900FADCA4 /* FYLCommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYLCommentVC.xib; sourceTree = "<group>"; };
+		46F7A6BF1929D2D400FADCA4 /* conmment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "conmment@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +136,7 @@
 			children = (
 				4622E2EF1920DC4800626967 /* content@2x.png */,
 				4622E2F01920DC4800626967 /* middle@2x.png */,
+				46F7A6BF1929D2D400FADCA4 /* conmment@2x.png */,
 				4622E2E21920DAF000626967 /* FYLNavigationController.h */,
 				4622E2DF1920DAF000626967 /* FYLNavigationController.m */,
 				4622E2E71920DAF000626967 /* FYLNavigationBar.h */,
@@ -136,6 +144,9 @@
 				4622E2E61920DAF000626967 /* FYLNextViewController.h */,
 				4622E2E01920DAF000626967 /* FYLNextViewController.m */,
 				4622E2E11920DAF000626967 /* FYLNextViewController.xib */,
+				46F7A6BA1929D16900FADCA4 /* FYLCommentVC.h */,
+				46F7A6BB1929D16900FADCA4 /* FYLCommentVC.m */,
+				46F7A6BC1929D16900FADCA4 /* FYLCommentVC.xib */,
 				4622E2E81920DAF000626967 /* FYLMiddleVC.h */,
 				4622E2E51920DAF000626967 /* FYLMiddleVC.m */,
 				4622E2E31920DAF000626967 /* FYLMiddleVC.xib */,
@@ -256,6 +267,8 @@
 				4622E2F11920DC4800626967 /* content@2x.png in Resources */,
 				4622E2BB1920DA9000626967 /* InfoPlist.strings in Resources */,
 				4622E2C31920DA9000626967 /* Images.xcassets in Resources */,
+				46F7A6BE1929D16900FADCA4 /* FYLCommentVC.xib in Resources */,
+				46F7A6C01929D2D400FADCA4 /* conmment@2x.png in Resources */,
 				4622E2EC1920DAF000626967 /* FYLMiddleVC.xib in Resources */,
 				4622E2F21920DC4800626967 /* middle@2x.png in Resources */,
 			);
@@ -282,6 +295,7 @@
 				4622E2BD1920DA9000626967 /* main.m in Sources */,
 				4622E2EA1920DAF000626967 /* FYLNextViewController.m in Sources */,
 				4622E2EE1920DAF000626967 /* FYLMiddleVC.m in Sources */,
+				46F7A6BD1929D16900FADCA4 /* FYLCommentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +492,7 @@
 				4622E2DB1920DA9000626967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4622E2DC1920DA9000626967 /* Build configuration list for PBXNativeTarget "DemoTestTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +501,7 @@
 				4622E2DE1920DA9000626967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

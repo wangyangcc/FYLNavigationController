@@ -8,6 +8,8 @@
 
 #import "FYLNextViewController.h"
 #import "FYLNavigationBar.h"
+#import "FYLMiddleVC.h"
+#import "FYLCommentVC.h"
 
 @interface FYLNextViewController ()
 
@@ -36,8 +38,8 @@
     _scrollView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0);
     [_scrollView setContentSize:CGSizeMake(320, 700)];
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(next)];
-    [_scrollView addGestureRecognizer:tap];
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(next)];
+//    [_scrollView addGestureRecognizer:tap];
     
     UIButton *left = [UIButton buttonWithType:UIButtonTypeCustom];
     [left setTitle:@"返回" forState:UIControlStateNormal];
@@ -46,6 +48,19 @@
     left.frame = CGRectMake(0, 0, 60, 44);
     [left addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
     self.bar.topItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:left];
+    
+    self.scrollNextVC = [[FYLCommentVC alloc] init];
+    
+    //测试
+    for (int i = 0; i < 20; i ++)
+    {
+        NSString *tmp = @"teironStr";
+        NSLog(tmp);
+        NSNumber *tmpNum = [NSNumber numberWithInt:2];
+        //NSLog(tmpNum);
+        
+    }
+    //end
 }
 
 - (void)didReceiveMemoryWarning

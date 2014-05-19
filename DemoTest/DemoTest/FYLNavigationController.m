@@ -15,6 +15,8 @@
 @interface FYLNavigationController () {
 
     UIView *shadowView;
+    
+    BOOL isAleft;
 }
 
 @property (nonatomic, strong) UIPanGestureRecognizer *interactivePopGestureRecognizer;
@@ -80,16 +82,16 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if ([self.viewControllers count] >= 2) {
-        //移除可能存在的在滑动过程中添加的 view
-        UIViewController * inViewController = self.viewControllers[([self.viewControllers count] - 2)];
-        UIView *navView = [[self.view subviews] firstObject];
-        UIView *controllerView = [[navView subviews] firstObject];
-        inViewController.view.frame = controllerView.bounds;
-        if ([[controllerView subviews] count] >= 2) {
-            [inViewController.view removeFromSuperview];
-        }
-    }
+//    if ([self.viewControllers count] >= 2) {
+//        //移除可能存在的在滑动过程中添加的 view
+//        UIViewController * inViewController = self.viewControllers[([self.viewControllers count] - 2)];
+//        UIView *navView = [[self.view subviews] firstObject];
+//        UIView *controllerView = [[navView subviews] firstObject];
+//        inViewController.view.frame = controllerView.bounds;
+//        if ([[controllerView subviews] count] >= 2) {
+//            [inViewController.view removeFromSuperview];
+//        }
+//    }
     
     [self addShadowView:viewController defaultValue:0.0f];
     
@@ -106,15 +108,15 @@
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated
 {
     self.interactivePopGestureRecognizer.enabled = NO;
-    if ([self.viewControllers count] >= 2) {
-        UIViewController * inViewController = self.viewControllers[([self.viewControllers count] - 2)];
-        UIView *navView = [[self.view subviews] firstObject];
-        UIView *controllerView = [[navView subviews] firstObject];
-        inViewController.view.frame = controllerView.bounds;
-        if ([[controllerView subviews] count] >= 2) {
-            [inViewController.view removeFromSuperview];
-        }
-    }
+//    if ([self.viewControllers count] >= 2) {
+//        UIViewController * inViewController = self.viewControllers[([self.viewControllers count] - 2)];
+//        UIView *navView = [[self.view subviews] firstObject];
+//        UIView *controllerView = [[navView subviews] firstObject];
+//        inViewController.view.frame = controllerView.bounds;
+//        if ([[controllerView subviews] count] >= 2) {
+//            [inViewController.view removeFromSuperview];
+//        }
+//    }
 
     [self addShadowView:self.topViewController defaultValue:0.7f];
     
@@ -185,8 +187,109 @@
         return;
     }
     CGFloat translationX = [gestureRecognizer translationInView:self.view].x;
+    //velocityX 为正时候向右滑动，为负时候向左滑动
     CGFloat velocityX = [gestureRecognizer velocityInView:self.view].x;
     
+    //如果是向左滑动
+    if (isAleft) {
+        [self aleftPanGestureRecognizer:gestureRecognizer
+                                translationX:translationX velocityX:velocityX];
+    }
+    else {
+        [self rightwardsPanGestureRecognizer:gestureRecognizer
+                                translationX:translationX velocityX:velocityX];
+    }
+}
+
+- (void)aleftPanGestureRecognizer:(UIPanGestureRecognizer *)gestureRecognizer
+                     translationX:(CGFloat)translationX
+                        velocityX:(CGFloat)velocityX
+{
+    UIViewController *currentViewController = self.visibleViewController;
+    if (currentViewController.scrollNextVC == nil) {
+        return;
+    }
+    UIViewController *nextViewController = currentViewController.scrollNextVC;
+    if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
+        UIView *navView = [[self.view subviews] firstObject];
+        UIView *controllerView = [[navView subviews] firstObject];
+        nextViewController.view.frame = controllerView.bounds;
+        if (![nextViewController.view isDescendantOfView:controllerView]) {
+            [controllerView insertSubview:nextViewController.view aboveSubview:currentViewController.view];
+            //中间的视图添加左右两侧阴影
+            UIBezierPath *path = [UIBezierPath bezierPathWithRect:nextViewController.view.bounds];
+            nextViewController.view.layer.shadowPath = path.CGPath;
+            [nextViewController.view layer].shadowColor = [UIColor blackColor].CGColor;
+            [nextViewController.view layer].shadowOffset = CGSizeMake(2, 0);
+            [nextViewController.view layer].shadowOpacity = 0.5;
+            [nextViewController.view layer].shadowRadius = 2.0;
+            //添加阴影view
+            [self addShadowView:nextViewController defaultValue:0.0f];
+        }
+        nextViewController.view.center = CGPointMake(160 + 320, CGRectGetHeight(nextViewController.view.frame)/2);
+        currentViewController.view.center = CGPointMake(160, CGRectGetHeight(currentViewController.view.frame)/2);
+    }
+    else if (gestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        CGFloat inViewCenterX = 160.0 + 320 + translationX;
+        CGFloat outViewCenterX = 160 + translationX/(320.0/98.0);
+        if (inViewCenterX < 160) {
+            inViewCenterX = 160;
+        }
+        if (outViewCenterX > 160) {
+            outViewCenterX = 160;
+        }
+        
+        float shadowX = shadowViewMax - shadowViewMax *(98 + translationX/(320.0/98.0))/98;
+        shadowView.alpha = shadowX;
+        nextViewController.view.center = CGPointMake(inViewCenterX, CGRectGetHeight(nextViewController.view.frame)/2);
+        currentViewController.view.center = CGPointMake(outViewCenterX, CGRectGetHeight(currentViewController.view.frame)/2);
+    }
+    else if (gestureRecognizer.state == UIGestureRecognizerStateEnded || gestureRecognizer.state == UIGestureRecognizerStateCancelled) {
+        NSLog(@"====%f=====%f",translationX,velocityX);
+        if (translationX > - 270) {
+            if (velocityX > 0) {
+                [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+                [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                    shadowView.alpha = 0.0f;
+                    nextViewController.view.center = CGPointMake(160 + 320, CGRectGetHeight(nextViewController.view.frame)/2);
+                    currentViewController.view.center = CGPointMake(160, CGRectGetHeight(currentViewController.view.frame)/2);
+                } completion:^(BOOL finished) {
+                    [nextViewController.view removeFromSuperview];
+                    [[UIApplication sharedApplication] endIgnoringInteractionEvents];
+                }];
+                
+                return;
+            }
+        }
+        [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+        [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            shadowView.alpha = shadowViewMax;
+            nextViewController.view.center = CGPointMake(160, CGRectGetHeight(nextViewController.view.frame)/2);
+            currentViewController.view.center = CGPointMake(62, CGRectGetHeight(currentViewController.view.frame)/2);
+        } completion:^(BOOL finished) {
+            
+            [nextViewController beginAppearanceTransition:YES animated:YES];
+            
+            [currentViewController willMoveToParentViewController:nil];
+            [currentViewController beginAppearanceTransition:NO animated:YES];
+            
+            [currentViewController.view removeFromSuperview];
+            [currentViewController endAppearanceTransition];
+            
+            NSMutableArray *viewCon = [self.viewControllers mutableCopy];
+            [viewCon addObject:nextViewController];
+            [self setViewControllers:viewCon animated:NO];
+            [nextViewController endAppearanceTransition];
+            [[UIApplication sharedApplication] endIgnoringInteractionEvents];
+        }];
+
+    }
+}
+
+- (void)rightwardsPanGestureRecognizer:(UIPanGestureRecognizer *)gestureRecognizer
+                          translationX:(CGFloat)translationX
+                             velocityX:(CGFloat)velocityX
+{
     UIViewController * outViewController = [self.viewControllers lastObject];
     
     UIViewController * inViewController = self.viewControllers[([self.viewControllers count] - 2)];
@@ -194,6 +297,7 @@
     if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
         
         UIView *navView = [[self.view subviews] firstObject];
+        //NSLog(@"%@",[navView subviews]);
         UIView *controllerView = [[navView subviews] firstObject];
         inViewController.view.frame = controllerView.bounds;
         if ([[controllerView subviews] count] < 2) {
@@ -230,7 +334,7 @@
                     inViewController.view.center = CGPointMake(62, CGRectGetHeight(inViewController.view.frame)/2);
                 } completion:^(BOOL finished) {
                     //inViewController.view.hidden = YES;
-//                    [inViewController.view removeFromSuperview];
+                    [inViewController.view removeFromSuperview];
                     [[UIApplication sharedApplication] endIgnoringInteractionEvents];
                 }];
                 
@@ -266,6 +370,15 @@
 {
     [shadowView removeFromSuperview];
     self.interactivePopGestureRecognizer.enabled = YES;
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    if (gestureRecognizer == self.interactivePopGestureRecognizer) {
+        CGFloat velocityX = [(UIPanGestureRecognizer *)gestureRecognizer velocityInView:self.view].x;
+        isAleft = velocityX <= 0;
+    }
+    return YES;
 }
 
 #pragma mark - 屏幕旋转设置 相关
@@ -323,9 +436,11 @@
 @end
 
 static char RemovePanGestureBlackKey;
+static char scrollNextVCKey;
 
 @implementation UIViewController (FYNavigationController)
 @dynamic isRemovePanGestureBlack;
+@dynamic scrollNextVC;
 
 - (BOOL)isRemovePanGestureBlack
 {
@@ -335,6 +450,16 @@ static char RemovePanGestureBlackKey;
 - (void)setIsRemovePanGestureBlack:(BOOL)isRemovePanGestureBlack
 {
     objc_setAssociatedObject(self, &RemovePanGestureBlackKey, [NSNumber numberWithBool:isRemovePanGestureBlack], OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (UIViewController *)scrollNextVC
+{
+    return objc_getAssociatedObject(self, &scrollNextVCKey);
+}
+
+- (void)setScrollNextVC:(UIViewController *)scrollNextVC
+{
+    objc_setAssociatedObject(self, &scrollNextVCKey, scrollNextVC, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)addDefaultNavigationBar:(UIRectEdge)f_rectEdge

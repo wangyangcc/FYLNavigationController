@@ -31,6 +31,8 @@ typedef NS_OPTIONS(NSUInteger, UIRectEdge) { //  让 xocde4 能编译过
 
 @property (nonatomic, assign) BOOL isRemovePanGestureBlack; //是否移除 pan 滑动返回功能
 
+@property (nonatomic, strong) UIViewController *scrollNextVC; //添加下个滑动显示的 viewController
+
 - (void)addDefaultNavigationBar:(UIRectEdge)f_rectEdge
         AdjustsScrollViewInsets:(BOOL)b;
 
