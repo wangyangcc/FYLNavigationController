@@ -38,9 +38,7 @@
     _scrollView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0);
     [_scrollView setContentSize:CGSizeMake(320, 700)];
     
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(next)];
-//    [_scrollView addGestureRecognizer:tap];
-    
+
     UIButton *left = [UIButton buttonWithType:UIButtonTypeCustom];
     [left setTitle:@"返回" forState:UIControlStateNormal];
     left.titleEdgeInsets = UIEdgeInsetsMake(0, -15, 0, 0);
@@ -51,16 +49,7 @@
     
     self.scrollNextVC = [[FYLCommentVC alloc] init];
     
-    //测试
-    for (int i = 0; i < 20; i ++)
-    {
-        NSString *tmp = @"teironStr";
-        NSLog(tmp);
-        NSNumber *tmpNum = [NSNumber numberWithInt:2];
-        //NSLog(tmpNum);
-        
-    }
-    //end
+    [self logOnDealloc];
 }
 
 - (void)didReceiveMemoryWarning

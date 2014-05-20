@@ -43,6 +43,7 @@
     [left addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
     self.bar.topItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:left];
 
+    [self logOnDealloc];
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,7 +10,14 @@
 #import <objc/runtime.h>
 #import "FYLNavigationBar.h"
 
-#define shadowViewMax   0.7
+#define shadowMin   0.2
+#define shadowMax   0.7
+
+#define PushPopTime  0.35
+
+#define SelfView_H CGRectGetHeight(self.view.frame)
+
+#define SelfView_W CGRectGetWidth(self.view.frame)
 
 @interface FYLNavigationController () {
 
@@ -55,11 +62,9 @@
     
     UIPanGestureRecognizer *_interactivePopGestureRecognizerA = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
     _interactivePopGestureRecognizerA.delegate = self;
+    _interactivePopGestureRecognizerA.delaysTouchesBegan = YES;
     [self.view addGestureRecognizer:_interactivePopGestureRecognizerA];
     self.interactivePopGestureRecognizer = _interactivePopGestureRecognizerA;
-#if !__has_feature(objc_arc)
-    [_interactivePopGestureRecognizerA release];
-#endif
     
     self.delegate = self;
 }
@@ -69,9 +74,6 @@
     self.delegate = nil;
     shadowView = nil;
     self.interactivePopGestureRecognizer = nil;
-#if !__has_feature(objc_arc)
-    [super dealloc];
-#endif
 }
 
 - (void)didReceiveMemoryWarning
@@ -82,22 +84,12 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-//    if ([self.viewControllers count] >= 2) {
-//        //移除可能存在的在滑动过程中添加的 view
-//        UIViewController * inViewController = self.viewControllers[([self.viewControllers count] - 2)];
-//        UIView *navView = [[self.view subviews] firstObject];
-//        UIView *controllerView = [[navView subviews] firstObject];
-//        inViewController.view.frame = controllerView.bounds;
-//        if ([[controllerView subviews] count] >= 2) {
-//            [inViewController.view removeFromSuperview];
-//        }
-//    }
-    
+
     [self addShadowView:viewController defaultValue:0.0f];
     
-    [UIView animateWithDuration:0.4
+    [UIView animateWithDuration:PushPopTime
                      animations:^{
-                         shadowView.alpha = 0.7;
+                         shadowView.alpha = shadowMax;
                      }];
 
    [super pushViewController:viewController animated:YES];
@@ -108,19 +100,9 @@
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated
 {
     self.interactivePopGestureRecognizer.enabled = NO;
-//    if ([self.viewControllers count] >= 2) {
-//        UIViewController * inViewController = self.viewControllers[([self.viewControllers count] - 2)];
-//        UIView *navView = [[self.view subviews] firstObject];
-//        UIView *controllerView = [[navView subviews] firstObject];
-//        inViewController.view.frame = controllerView.bounds;
-//        if ([[controllerView subviews] count] >= 2) {
-//            [inViewController.view removeFromSuperview];
-//        }
-//    }
-
-    [self addShadowView:self.topViewController defaultValue:0.7f];
+    [self addShadowView:self.topViewController defaultValue:shadowMax];
     
-    [UIView animateWithDuration:0.35
+    [UIView animateWithDuration:PushPopTime
                      animations:^{
                          shadowView.alpha = 0.0;
                      }];
@@ -129,17 +111,9 @@
 
 - (NSArray *)popToRootViewControllerAnimated:(BOOL)animated
 {
-    if ([self.viewControllers count] >= 2) {
-        UIViewController * inViewController = self.viewControllers[([self.viewControllers count] - 2)];
-        UIView *navView = [[self.view subviews] firstObject];
-        UIView *controllerView = [[navView subviews] firstObject];
-        inViewController.view.frame = controllerView.bounds;
-        if ([[controllerView subviews] count] >= 2) {
-            [inViewController.view removeFromSuperview];
-        }
-    }
-    [self addShadowView:self.topViewController defaultValue:0.7f];
-    [UIView animateWithDuration:0.35
+
+    [self addShadowView:self.topViewController defaultValue:shadowMax];
+    [UIView animateWithDuration:PushPopTime
                      animations:^{
                          shadowView.alpha = 0.0;
                      }];
@@ -149,17 +123,8 @@
 
 - (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if ([self.viewControllers count] >= 2) {
-        UIViewController * inViewController = self.viewControllers[([self.viewControllers count] - 2)];
-        UIView *navView = [[self.view subviews] firstObject];
-        UIView *controllerView = [[navView subviews] firstObject];
-        inViewController.view.frame = controllerView.bounds;
-        if ([[controllerView subviews] count] >= 2) {
-            [inViewController.view removeFromSuperview];
-        }
-    }
-    [self addShadowView:self.topViewController defaultValue:0.7f];
-    [UIView animateWithDuration:0.35
+    [self addShadowView:self.topViewController defaultValue:shadowMax];
+    [UIView animateWithDuration:PushPopTime
                      animations:^{
                          shadowView.alpha = 0.0;
                      }];
@@ -174,7 +139,10 @@
         [viewConroller.view addSubview:shadowView];
     }
     CGRect rect = shadowView.frame;
-    rect.origin.x = -320.0f;
+    rect.origin.x = 0;
+    rect.origin.x -= SelfView_W;
+    rect.size.width = SelfView_W;
+    rect.size.height = SelfView_H;
     shadowView.frame = rect;
     shadowView.alpha = defaultValue;
 }
@@ -216,43 +184,43 @@
         nextViewController.view.frame = controllerView.bounds;
         if (![nextViewController.view isDescendantOfView:controllerView]) {
             [controllerView insertSubview:nextViewController.view aboveSubview:currentViewController.view];
-            //中间的视图添加左右两侧阴影
+            //中间的视图添加阴影
             UIBezierPath *path = [UIBezierPath bezierPathWithRect:nextViewController.view.bounds];
             nextViewController.view.layer.shadowPath = path.CGPath;
             [nextViewController.view layer].shadowColor = [UIColor blackColor].CGColor;
-            [nextViewController.view layer].shadowOffset = CGSizeMake(2, 0);
-            [nextViewController.view layer].shadowOpacity = 0.5;
-            [nextViewController.view layer].shadowRadius = 2.0;
+            [nextViewController.view layer].shadowOffset = CGSizeMake(3, 0);
+            [nextViewController.view layer].shadowOpacity = 0.7;
+            [nextViewController.view layer].shadowRadius = 3.0;
             //添加阴影view
             [self addShadowView:nextViewController defaultValue:0.0f];
         }
-        nextViewController.view.center = CGPointMake(160 + 320, CGRectGetHeight(nextViewController.view.frame)/2);
-        currentViewController.view.center = CGPointMake(160, CGRectGetHeight(currentViewController.view.frame)/2);
+        nextViewController.view.center = CGPointMake(3*SelfView_W/2, CGRectGetHeight(nextViewController.view.frame)/2);
+        currentViewController.view.center = CGPointMake(SelfView_W/2, CGRectGetHeight(currentViewController.view.frame)/2);
     }
     else if (gestureRecognizer.state == UIGestureRecognizerStateChanged) {
-        CGFloat inViewCenterX = 160.0 + 320 + translationX;
-        CGFloat outViewCenterX = 160 + translationX/(320.0/98.0);
-        if (inViewCenterX < 160) {
-            inViewCenterX = 160;
+        CGFloat inViewCenterX = 3*SelfView_W/2 + translationX;
+        CGFloat outViewCenterX = SelfView_W/2 + translationX/(SelfView_W/98.0);
+        if (inViewCenterX < SelfView_W/2) {
+            inViewCenterX = SelfView_W/2;
         }
-        if (outViewCenterX > 160) {
-            outViewCenterX = 160;
+        if (outViewCenterX > SelfView_W/2) {
+            outViewCenterX = SelfView_W/2;
         }
         
-        float shadowX = shadowViewMax - shadowViewMax *(98 + translationX/(320.0/98.0))/98;
+        float shadowX = shadowMax - shadowMax *(98 + translationX/(SelfView_W/98.0))/98;
         shadowView.alpha = shadowX;
         nextViewController.view.center = CGPointMake(inViewCenterX, CGRectGetHeight(nextViewController.view.frame)/2);
         currentViewController.view.center = CGPointMake(outViewCenterX, CGRectGetHeight(currentViewController.view.frame)/2);
     }
     else if (gestureRecognizer.state == UIGestureRecognizerStateEnded || gestureRecognizer.state == UIGestureRecognizerStateCancelled) {
-        NSLog(@"====%f=====%f",translationX,velocityX);
+
         if (translationX > - 270) {
             if (velocityX > 0) {
                 [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
                 [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                     shadowView.alpha = 0.0f;
-                    nextViewController.view.center = CGPointMake(160 + 320, CGRectGetHeight(nextViewController.view.frame)/2);
-                    currentViewController.view.center = CGPointMake(160, CGRectGetHeight(currentViewController.view.frame)/2);
+                    nextViewController.view.center = CGPointMake(3*SelfView_W/2, CGRectGetHeight(nextViewController.view.frame)/2);
+                    currentViewController.view.center = CGPointMake(SelfView_W/2, CGRectGetHeight(currentViewController.view.frame)/2);
                 } completion:^(BOOL finished) {
                     [nextViewController.view removeFromSuperview];
                     [[UIApplication sharedApplication] endIgnoringInteractionEvents];
@@ -263,8 +231,8 @@
         }
         [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
         [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            shadowView.alpha = shadowViewMax;
-            nextViewController.view.center = CGPointMake(160, CGRectGetHeight(nextViewController.view.frame)/2);
+            shadowView.alpha = shadowMax;
+            nextViewController.view.center = CGPointMake(SelfView_W/2, CGRectGetHeight(nextViewController.view.frame)/2);
             currentViewController.view.center = CGPointMake(62, CGRectGetHeight(currentViewController.view.frame)/2);
         } completion:^(BOOL finished) {
             
@@ -302,23 +270,29 @@
         inViewController.view.frame = controllerView.bounds;
         if ([[controllerView subviews] count] < 2) {
             [controllerView insertSubview:inViewController.view belowSubview:outViewController.view];
-            
+            //中间的视图添加阴影
+            UIBezierPath *path = [UIBezierPath bezierPathWithRect:outViewController.view.bounds];
+            outViewController.view.layer.shadowPath = path.CGPath;
+            [outViewController.view layer].shadowColor = [UIColor blackColor].CGColor;
+            [outViewController.view layer].shadowOffset = CGSizeMake(3, 0);
+            [outViewController.view layer].shadowOpacity = 0.7;
+            [outViewController.view layer].shadowRadius = 3.0;
             //添加阴影view
-            [self addShadowView:self.topViewController defaultValue:0.7f];
+            [self addShadowView:self.topViewController defaultValue:shadowMax];
         }
         inViewController.view.center = CGPointMake(62, CGRectGetHeight(inViewController.view.frame)/2);
-        outViewController.view.center = CGPointMake(160, CGRectGetHeight(outViewController.view.frame)/2);
+        outViewController.view.center = CGPointMake(SelfView_W/2, CGRectGetHeight(outViewController.view.frame)/2);
     }
     else if (gestureRecognizer.state == UIGestureRecognizerStateChanged) {
-        CGFloat inViewCenterX = 62.0 + translationX/(320.0/98.0);
-        CGFloat outViewCenterX = 160.0 + translationX;
-        if (inViewCenterX > 160) {
-            inViewCenterX = 160;
+        CGFloat inViewCenterX = 62.0 + translationX/(SelfView_W/98.0);
+        CGFloat outViewCenterX = SelfView_W/2 + translationX;
+        if (inViewCenterX > SelfView_W/2) {
+            inViewCenterX = SelfView_W/2;
         }
-        if (outViewCenterX < 160) {
-            outViewCenterX = 160;
+        if (outViewCenterX < SelfView_W/2) {
+            outViewCenterX = SelfView_W/2;
         }
-        float shadowX = shadowViewMax *(80 - translationX/(320.0/98.0))/80;
+        float shadowX = shadowMax *(80 - translationX/(SelfView_W/98.0))/80;
         shadowView.alpha = shadowX;
         inViewController.view.center = CGPointMake(inViewCenterX, CGRectGetHeight(inViewController.view.frame)/2);
         outViewController.view.center = CGPointMake(outViewCenterX, CGRectGetHeight(outViewController.view.frame)/2);
@@ -329,8 +303,8 @@
             if (velocityX < 170) {
                 [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
                 [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    shadowView.alpha = shadowViewMax;
-                    outViewController.view.center = CGPointMake(160, CGRectGetHeight(outViewController.view.frame)/2);
+                    shadowView.alpha = shadowMax;
+                    outViewController.view.center = CGPointMake(SelfView_W/2, CGRectGetHeight(outViewController.view.frame)/2);
                     inViewController.view.center = CGPointMake(62, CGRectGetHeight(inViewController.view.frame)/2);
                 } completion:^(BOOL finished) {
                     //inViewController.view.hidden = YES;
@@ -344,7 +318,7 @@
         [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
         [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             shadowView.alpha = 0.0f;
-            inViewController.view.center = CGPointMake(160, CGRectGetHeight(inViewController.view.frame)/2);
+            inViewController.view.center = CGPointMake(SelfView_W/2, CGRectGetHeight(inViewController.view.frame)/2);
             outViewController.view.center = CGPointMake(CGRectGetWidth(self.view.frame) + 160, CGRectGetHeight(outViewController.view.frame)/2);
         } completion:^(BOOL finished) {
             [inViewController beginAppearanceTransition:YES animated:YES];
@@ -465,13 +439,13 @@ static char scrollNextVCKey;
 - (void)addDefaultNavigationBar:(UIRectEdge)f_rectEdge
         AdjustsScrollViewInsets:(BOOL)b
 {
-    FYLNavigationBar *bar = nil;
-    if (Ios7After) {
-        bar = [[FYLNavigationBar alloc] initWithFrame:CGRectMake(0, 20, 320, 44)];
-    }
-    else {
-        bar = [[FYLNavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-    }
+//    FYLNavigationBar *bar = nil;
+//    if (Ios7After) {
+//        bar = [[FYLNavigationBar alloc] initWithFrame:CGRectMake(0, 20, SelfView_W, 44)];
+//    }
+//    else {
+//        bar = [[FYLNavigationBar alloc] initWithFrame:CGRectMake(0, 0, SelfView_W, 44)];
+//    }
     
     
 }

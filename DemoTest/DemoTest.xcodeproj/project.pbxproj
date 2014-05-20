@@ -27,6 +27,7 @@
 		4622E2EE1920DAF000626967 /* FYLMiddleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4622E2E51920DAF000626967 /* FYLMiddleVC.m */; };
 		4622E2F11920DC4800626967 /* content@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4622E2EF1920DC4800626967 /* content@2x.png */; };
 		4622E2F21920DC4800626967 /* middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4622E2F01920DC4800626967 /* middle@2x.png */; };
+		465616EF192AF9E300E1EEE2 /* NSObject+LogDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 465616EE192AF9E300E1EEE2 /* NSObject+LogDealloc.m */; };
 		46F7A6BD1929D16900FADCA4 /* FYLCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F7A6BB1929D16900FADCA4 /* FYLCommentVC.m */; };
 		46F7A6BE1929D16900FADCA4 /* FYLCommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F7A6BC1929D16900FADCA4 /* FYLCommentVC.xib */; };
 		46F7A6C01929D2D400FADCA4 /* conmment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F7A6BF1929D2D400FADCA4 /* conmment@2x.png */; };
@@ -71,6 +72,8 @@
 		4622E2E81920DAF000626967 /* FYLMiddleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLMiddleVC.h; sourceTree = "<group>"; };
 		4622E2EF1920DC4800626967 /* content@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content@2x.png"; sourceTree = "<group>"; };
 		4622E2F01920DC4800626967 /* middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle@2x.png"; sourceTree = "<group>"; };
+		465616ED192AF9E300E1EEE2 /* NSObject+LogDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LogDealloc.h"; sourceTree = "<group>"; };
+		465616EE192AF9E300E1EEE2 /* NSObject+LogDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LogDealloc.m"; sourceTree = "<group>"; };
 		46F7A6BA1929D16900FADCA4 /* FYLCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLCommentVC.h; sourceTree = "<group>"; };
 		46F7A6BB1929D16900FADCA4 /* FYLCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLCommentVC.m; sourceTree = "<group>"; };
 		46F7A6BC1929D16900FADCA4 /* FYLCommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYLCommentVC.xib; sourceTree = "<group>"; };
@@ -134,9 +137,7 @@
 		4622E2B61920DA9000626967 /* DemoTest */ = {
 			isa = PBXGroup;
 			children = (
-				4622E2EF1920DC4800626967 /* content@2x.png */,
-				4622E2F01920DC4800626967 /* middle@2x.png */,
-				46F7A6BF1929D2D400FADCA4 /* conmment@2x.png */,
+				465616F0192AF9E600E1EEE2 /* Other */,
 				4622E2E21920DAF000626967 /* FYLNavigationController.h */,
 				4622E2DF1920DAF000626967 /* FYLNavigationController.m */,
 				4622E2E71920DAF000626967 /* FYLNavigationBar.h */,
@@ -185,6 +186,18 @@
 				4622E2D21920DA9000626967 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		465616F0192AF9E600E1EEE2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				465616ED192AF9E300E1EEE2 /* NSObject+LogDealloc.h */,
+				465616EE192AF9E300E1EEE2 /* NSObject+LogDealloc.m */,
+				4622E2EF1920DC4800626967 /* content@2x.png */,
+				4622E2F01920DC4800626967 /* middle@2x.png */,
+				46F7A6BF1929D2D400FADCA4 /* conmment@2x.png */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4622E2E91920DAF000626967 /* FYLNavigationController.m in Sources */,
+				465616EF192AF9E300E1EEE2 /* NSObject+LogDealloc.m in Sources */,
 				4622E2C11920DA9000626967 /* FYLAppDelegate.m in Sources */,
 				4622E2ED1920DAF000626967 /* FYLNavigationBar.m in Sources */,
 				4622E2BD1920DA9000626967 /* main.m in Sources */,
