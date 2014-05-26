@@ -3,8 +3,10 @@ FYLNavigationController
 
 this UINavigationController Subclass Make push and Pop actions with swipe gestures, Like [网易新闻](https://itunes.apple.com/cn/app/wang-yi-xin-wen/id425349261?mt=8) 
 navigationController's Transitions
+
 ***
-![Mou icon](https://github.com/wangyangcc/FYLNavigationController/blob/master/FYLNavigationController.gif)
+
+![icon](https://github.com/wangyangcc/FYLNavigationController/blob/master/FYLNavigationController.gif)
 
 ##Usage
 ***
