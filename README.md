@@ -6,7 +6,7 @@ navigationController's Transitions
 
 ***
 
-![icon](https://github.com/wangyangcc/FYLNavigationController/blob/master/FYLNavigationController.gif)
+![icon](https://github.com/wangyangcc/FYLNavigationController.wiki.git)
 
 ##Usage
 ***
