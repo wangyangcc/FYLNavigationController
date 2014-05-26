@@ -19,14 +19,6 @@ navigationController's Transitions
 *** 
  Current version requires `ARC` and `iOS5`
 
-> ## CocoaPods
-> ***
->  `FYLNavigationController` can be installed using [CocoaPods](CocoaPods).
- 
->  ```
->  pod `FYLNavigationController`
->  ```
-
 License
 -------
 
