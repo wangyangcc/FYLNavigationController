@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/blank/Documents/MyGitHub/FYLNavigationController/DemoTest/DemoTest/FYLNavigationController.m \
-  /Users/blank/Documents/MyGitHub/FYLNavigationController/DemoTest/DemoTest/FYLNavigationBar.h
+  /Users/blank/Documents/MyGitHub/FYLNavigationController/DemoTest/DemoTest/FYLNavigationController/FYLNavigationController.m \
+  /Users/blank/Documents/MyGitHub/FYLNavigationController/DemoTest/DemoTest/FYLNavigationController/FYLNavigationBar.h

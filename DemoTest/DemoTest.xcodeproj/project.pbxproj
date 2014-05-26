@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46057FA719332D4B00C8716B /* FYLNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46057FA419332D4B00C8716B /* FYLNavigationBar.m */; };
+		46057FA819332D4B00C8716B /* FYLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46057FA619332D4B00C8716B /* FYLNavigationController.m */; };
 		4622E2B11920DA9000626967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4622E2B01920DA9000626967 /* Foundation.framework */; };
 		4622E2B31920DA9000626967 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4622E2B21920DA9000626967 /* CoreGraphics.framework */; };
 		4622E2B51920DA9000626967 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4622E2B41920DA9000626967 /* UIKit.framework */; };
@@ -19,11 +21,9 @@
 		4622E2CC1920DA9000626967 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4622E2B41920DA9000626967 /* UIKit.framework */; };
 		4622E2D41920DA9000626967 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4622E2D21920DA9000626967 /* InfoPlist.strings */; };
 		4622E2D61920DA9000626967 /* DemoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4622E2D51920DA9000626967 /* DemoTestTests.m */; };
-		4622E2E91920DAF000626967 /* FYLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4622E2DF1920DAF000626967 /* FYLNavigationController.m */; };
 		4622E2EA1920DAF000626967 /* FYLNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4622E2E01920DAF000626967 /* FYLNextViewController.m */; };
 		4622E2EB1920DAF000626967 /* FYLNextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4622E2E11920DAF000626967 /* FYLNextViewController.xib */; };
 		4622E2EC1920DAF000626967 /* FYLMiddleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4622E2E31920DAF000626967 /* FYLMiddleVC.xib */; };
-		4622E2ED1920DAF000626967 /* FYLNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4622E2E41920DAF000626967 /* FYLNavigationBar.m */; };
 		4622E2EE1920DAF000626967 /* FYLMiddleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4622E2E51920DAF000626967 /* FYLMiddleVC.m */; };
 		4622E2F11920DC4800626967 /* content@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4622E2EF1920DC4800626967 /* content@2x.png */; };
 		4622E2F21920DC4800626967 /* middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4622E2F01920DC4800626967 /* middle@2x.png */; };
@@ -44,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46057FA319332D4B00C8716B /* FYLNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLNavigationBar.h; sourceTree = "<group>"; };
+		46057FA419332D4B00C8716B /* FYLNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLNavigationBar.m; sourceTree = "<group>"; };
+		46057FA519332D4B00C8716B /* FYLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLNavigationController.h; sourceTree = "<group>"; };
+		46057FA619332D4B00C8716B /* FYLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLNavigationController.m; sourceTree = "<group>"; };
 		4622E2AD1920DA9000626967 /* DemoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4622E2B01920DA9000626967 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4622E2B21920DA9000626967 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,15 +64,11 @@
 		4622E2D11920DA9000626967 /* DemoTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoTestTests-Info.plist"; sourceTree = "<group>"; };
 		4622E2D31920DA9000626967 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4622E2D51920DA9000626967 /* DemoTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTestTests.m; sourceTree = "<group>"; };
-		4622E2DF1920DAF000626967 /* FYLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLNavigationController.m; sourceTree = "<group>"; };
 		4622E2E01920DAF000626967 /* FYLNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLNextViewController.m; sourceTree = "<group>"; };
 		4622E2E11920DAF000626967 /* FYLNextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYLNextViewController.xib; sourceTree = "<group>"; };
-		4622E2E21920DAF000626967 /* FYLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLNavigationController.h; sourceTree = "<group>"; };
 		4622E2E31920DAF000626967 /* FYLMiddleVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYLMiddleVC.xib; sourceTree = "<group>"; };
-		4622E2E41920DAF000626967 /* FYLNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLNavigationBar.m; sourceTree = "<group>"; };
 		4622E2E51920DAF000626967 /* FYLMiddleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLMiddleVC.m; sourceTree = "<group>"; };
 		4622E2E61920DAF000626967 /* FYLNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLNextViewController.h; sourceTree = "<group>"; };
-		4622E2E71920DAF000626967 /* FYLNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLNavigationBar.h; sourceTree = "<group>"; };
 		4622E2E81920DAF000626967 /* FYLMiddleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLMiddleVC.h; sourceTree = "<group>"; };
 		4622E2EF1920DC4800626967 /* content@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content@2x.png"; sourceTree = "<group>"; };
 		4622E2F01920DC4800626967 /* middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle@2x.png"; sourceTree = "<group>"; };
@@ -104,6 +104,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46057FA219332D4B00C8716B /* FYLNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				46057FA319332D4B00C8716B /* FYLNavigationBar.h */,
+				46057FA419332D4B00C8716B /* FYLNavigationBar.m */,
+				46057FA519332D4B00C8716B /* FYLNavigationController.h */,
+				46057FA619332D4B00C8716B /* FYLNavigationController.m */,
+			);
+			path = FYLNavigationController;
+			sourceTree = "<group>";
+		};
 		4622E2A41920DA9000626967 = {
 			isa = PBXGroup;
 			children = (
@@ -137,11 +148,8 @@
 		4622E2B61920DA9000626967 /* DemoTest */ = {
 			isa = PBXGroup;
 			children = (
+				46057FA219332D4B00C8716B /* FYLNavigationController */,
 				465616F0192AF9E600E1EEE2 /* Other */,
-				4622E2E21920DAF000626967 /* FYLNavigationController.h */,
-				4622E2DF1920DAF000626967 /* FYLNavigationController.m */,
-				4622E2E71920DAF000626967 /* FYLNavigationBar.h */,
-				4622E2E41920DAF000626967 /* FYLNavigationBar.m */,
 				4622E2E61920DAF000626967 /* FYLNextViewController.h */,
 				4622E2E01920DAF000626967 /* FYLNextViewController.m */,
 				4622E2E11920DAF000626967 /* FYLNextViewController.xib */,
@@ -302,12 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4622E2E91920DAF000626967 /* FYLNavigationController.m in Sources */,
 				465616EF192AF9E300E1EEE2 /* NSObject+LogDealloc.m in Sources */,
 				4622E2C11920DA9000626967 /* FYLAppDelegate.m in Sources */,
-				4622E2ED1920DAF000626967 /* FYLNavigationBar.m in Sources */,
 				4622E2BD1920DA9000626967 /* main.m in Sources */,
+				46057FA819332D4B00C8716B /* FYLNavigationController.m in Sources */,
 				4622E2EA1920DAF000626967 /* FYLNextViewController.m in Sources */,
+				46057FA719332D4B00C8716B /* FYLNavigationBar.m in Sources */,
 				4622E2EE1920DAF000626967 /* FYLMiddleVC.m in Sources */,
 				46F7A6BD1929D16900FADCA4 /* FYLCommentVC.m in Sources */,
 			);
